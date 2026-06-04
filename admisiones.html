@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admisiones | EMSaD 35</title>
+
+    <link rel="icon" type="image/png" href="img/logo2.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      .faq-container {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .faq-item {
+        margin-bottom: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .faq-question {
+        width: 100%;
+        border: none;
+        padding: 20px;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        background: var(--verde);
+        color: white;
+        transition: 0.3s;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-question:hover {
+        background: var(--verde-claro);
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        background: white;
+        transition: all 0.3s ease;
+      }
+
+      .faq-answer.active {
+        max-height: 200px;
+        padding: 20px;
+      }
+
+      .faq-answer p {
+        margin: 0;
+      }
+      .convocatoria-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.convocatoria-img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="img/logo2.png" alt="Logo EMSaD 35" />
+
+          <div class="logo-text">
+            <span>EMSaD 35</span>
+          </div>
+        </div>
+
+        <nav id="nav">
+          <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="oferta.html">Oferta Educativa</a></li>
+            <li><a href="admisiones.html">Admisiones</a></li>
+            <li><a href="docentes.html">Docentes</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Admisiones EMSaD 35</h1>
+
+        <p>
+          Aún estás a tiempo de formar parte de nuestra comunidad educativa.
+          Consulta el proceso de ingreso para el semestre 2026-02.
+        </p>
+
+        <br />
+
+        <a href="contacto.html" class="btn-primary"> Solicitar Información </a>
+      </div>
+    </section>
+
+    <!-- INTRODUCCIÓN -->
+
+    <!-- <section>
+      <div class="container">
+        <h2 class="section-title">Convocatoria de Ingreso</h2>
+
+        <p class="intro-text">
+          EMSaD 35 abre su proceso de admisión para estudiantes que desean
+          cursar la Educación Media Superior. Consulta las fechas, requisitos y
+          documentación necesaria para completar tu registro.
+        </p>
+      </div>
+    </section> -->
+
+    <section>
+  <div class="container">
+    <h2 class="section-title">Convocatoria 2026-02</h2>
+
+    <p class="intro-text">
+          EMSaD 35 abre su proceso de admisión para estudiantes que desean
+          cursar la Educación Media Superior. Consulta las fechas, requisitos y
+          documentación necesaria para completar tu registro.
+        </p>
+
+    <div class="convocatoria-container">
+      <img
+        src="img/convocatoria2026-02.jpg"
+        alt="Convocatoria EMSaD 35 semestre 2026-02"
+        class="convocatoria-img"
+      />
+    </div>
+  </div>
+</section>
+
+    <!-- FECHAS IMPORTANTES -->
+
+    <section class="professional-section">
+      <div class="container">
+        <h2 class="section-title">Fechas Importantes</h2>
+
+        <div class="cards-grid">
+          <div class="card">
+            <i class="fa-solid fa-calendar-days fa-2x"></i>
+            <h3>Preinscripciones</h3>
+            <p>18 al 22 de mayo de 2026</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-folder-open fa-2x"></i>
+            <h3>Recepción de Documentos</h3>
+            <p>Julio 2026</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-user-check fa-2x"></i>
+            <h3>Inscripciones</h3>
+            <p>Abiertas</p>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-school fa-2x"></i>
+            <h3>Inicio de Clases</h3>
+            <p>Agosto 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUISITOS -->
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Requisitos de Ingreso</h2>
+
+        <div class="cards-grid">
+          <div class="card">
+            <i class="fa-solid fa-id-card fa-2x"></i>
+            <h3>Acta de Nacimiento</h3>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-school fa-2x"></i>
+            <h3>Certificado de Secundaria</h3>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <h3>CURP</h3>
+          </div>
+
+          <div class="card">
+            <i class="fa-solid fa-camera fa-2x"></i>
+            <h3>Fotografías Tamaño Infantil</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+
+    <section class="professional-section">
+      <div class="container">
+        <h2 class="section-title">Proceso de Admisión</h2>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Paso 1</h3>
+            <p>Solicitar ficha de ingreso.</p>
+          </div>
+
+          <div class="card">
+            <h3>Paso 2</h3>
+            <p>Entregar documentación requerida.</p>
+          </div>
+
+          <div class="card">
+            <h3>Paso 3</h3>
+            <p>Validación de requisitos.</p>
+          </div>
+
+          <div class="card">
+            <h3>Paso 4</h3>
+            <p>Publicación de resultados.</p>
+          </div>
+
+          <div class="card">
+            <h3>Paso 5</h3>
+            <p>Inscripción definitiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCARGAS -->
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Descargas</h2>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Convocatoria</h3>
+            <p>Consulta toda la información oficial.</p>
+            <br />
+            <a href="#" class="btn-secondary"> Descargar PDF </a>
+          </div>
+
+          <div class="card">
+            <h3>Solicitud de Ingreso</h3>
+            <p>Formato para iniciar el proceso.</p>
+            <br />
+            <a href="#" class="btn-secondary"> Descargar PDF </a>
+          </div>
+
+          <div class="card">
+            <h3>Guía del Aspirante</h3>
+            <p>Información importante para estudiantes.</p>
+            <br />
+            <a href="#" class="btn-secondary"> Descargar PDF </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+
+    <section class="professional-section">
+      <div class="container">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cuándo inicia el proceso de admisión?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                El proceso inicia de acuerdo con las fechas establecidas en la
+                convocatoria vigente.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué documentos necesito presentar?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Acta de nacimiento, CURP, certificado o constancia de secundaria
+                y fotografías.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Tiene costo la ficha de ingreso?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Consulta la convocatoria vigente para conocer los costos
+                aplicables.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Dónde puedo solicitar más información?
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Directamente en las instalaciones del EMSaD 35 o mediante
+                nuestros canales de contacto oficiales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO A LA ACCIÓN -->
+
+    <section class="graduation-section">
+      <div class="container">
+        <div class="training-card">
+          <h3>¿Listo para formar parte de EMSaD 35?</h3>
+
+          <p>
+            Inicia hoy mismo tu proceso de admisión y prepárate para continuar
+            tu formación académica.
+          </p>
+
+          <br />
+
+          <a href="contacto.html" class="btn-primary">
+            Solicitar Información
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2025 EMSaD 35 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
