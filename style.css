@@ -436,4 +436,64 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Pagina de Admisiones */
+/* OPORTUNIDADES */
+
+.opportunities-section {
+  background: #f7f7f7;
+}
+
+.opportunities-intro {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+.feature-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.feature-content {
+  padding: 28px;
+}
+
+.feature-content h3 {
+  color: var(--verde);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.feature-content p {
+  color: #555;
+  margin: 0;
+}
+
+.feature-content strong {
+  color: var(--oscuro);
+}
+
+@media (max-width: 768px) {
+  .feature-image {
+    height: 200px;
+  }
+
+  .feature-content {
+    padding: 22px;
+  }
+}
+
+

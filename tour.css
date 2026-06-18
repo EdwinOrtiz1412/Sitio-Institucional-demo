@@ -1,0 +1,138 @@
+:root {
+  --verde: #00a14b;
+  --naranja: #f26d23;
+  --oscuro: #2b2b2b;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.tour-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+
+  height: 80px;
+
+  padding: 0 40px;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand img {
+  height: 55px;
+}
+
+.brand h1 {
+  color: var(--verde);
+  font-size: 1.4rem;
+}
+
+.brand span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.btn-back {
+  text-decoration: none;
+
+  background: var(--verde);
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  opacity: 0.9;
+}
+
+#panorama {
+  width: 100vw;
+  height: 100vh;
+}
+
+.tour-info {
+  position: fixed;
+
+  left: 30px;
+  bottom: 30px;
+
+  z-index: 999;
+
+  width: 350px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tour-info h2 {
+  color: var(--verde);
+  margin-bottom: 10px;
+}
+
+.tour-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.pnlm-hotspot-base {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .tour-header {
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .brand img {
+    height: 45px;
+  }
+
+  .btn-back {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .tour-info {
+    width: calc(100% - 40px);
+    left: 20px;
+    bottom: 20px;
+  }
+}
