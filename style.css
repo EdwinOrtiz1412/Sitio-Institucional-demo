@@ -495,5 +495,49 @@ footer {
     padding: 22px;
   }
 }
+.tour-wrapper {
+  margin-top: 20px;
+}
 
+.tour-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--gris);
+  font-size: 0.9rem;
+}
 
+.tour-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 16px 24px;
+
+  background: linear-gradient(
+    135deg,
+    var(--verde),
+    var(--verde-claro)
+  );
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 161, 75, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.tour-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 161, 75, 0.35);
+}
+
+.tour-btn i {
+  color: var(--naranja);
+  font-size: 1.2rem;
+}

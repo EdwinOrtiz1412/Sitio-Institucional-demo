@@ -47,7 +47,8 @@ const viewer = pannellum.viewer("panorama", {
 
       type: "equirectangular",
 
-      panorama: "https://pannellum.org/images/alma.jpg",
+      panorama: "img/mark3.jpeg",
+      
 
       hotSpots: [
         {
